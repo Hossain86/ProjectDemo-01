@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login And Registration</title>
+  <link rel="stylesheet" href="Login.css">
+  <link rel="icon" type="image/x-icon" href="icon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+<!-- login goes here -->
+<div class="login-all-section">
+  <h2 style="text-align:center;">Welcome back!</h2>
+  <p>Mobile:</p>
+  <input type="text" id="mobilelogin" placeholder="Enter phone number" required>
+
+  <p>Email:</p>
+  <input type="email" id="login-email" placeholder="Enter your email">
+  <p>Password:</p>
+  <input type="password" id="login-password" placeholder="Enter Password"><br><br>
+  <button class="login-sub-button" onclick="loginData()">Submit</button>
+  <p style="text-align:center;">Don't have an account? <a href="#" onclick="registration()">Register</a></p>
+</div>
+
+<!-- registration goes here -->
+<div class="registration-all-section">
+  <h2 style="text-align:center;">Create an Account</h2>
+  <p>Name:</p>
+  <input type="text" id="name" placeholder="Enter your name">
+
+
+  <p>School:</p>
+  <input type="text" id="school" placeholder="Enter School name">
+  
+  <p>Mobile:</p>
+  <input type="text" id="mobile" placeholder="Enter phone number" required>
+
+  <p>Email:</p>
+  <input type="email" id="email" placeholder="Enter your email">
+  <p>Password:</p>
+  <input type="password" id="password" placeholder="Enter Password">
+  <br><br>
+  <button class="sub-button" onclick="submitRegistration(event)">Submit</button> 
+  <p style="text-align:center;">Have an account? <a href="#" onclick="login()">Login</a></p>
+</div>
+<!-- <script type="module" src="Login-2.js"></script> -->
+
+  <script src="Registration.js" type="module"></script>
+  <script src="Login.js" type="module"></script>
+  <script src="script-02.js" ></script>
+  </body>
+</html>

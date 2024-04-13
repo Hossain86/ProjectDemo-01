@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+
+  <link rel="stylesheet" href="profile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar Code goes here -->
+  <nav>
+    <div class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="profile.html"><img src="img/user-2.png" class="nav-img"></a>
+      <a href="welcome.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#"class="btn" onclick="logout()">Logout</a>
+    </div>
+    <div class="navbar">
+      <span class="open" style="font-size: 20px;">&#9776; Open</span>
+      <h2 style="cursor: pointer;" onclick='window.location.href="/welcome.html";'>The Ultimate Exam Website</h2>
+      <a class="navbar-href" href="profile.html"><img src="img/user-2.png" title="Profile" class="nav-img2"></a>
+    </div>
+  </nav>
+
+
+  <div class="main-menu">
+    <!-- Upper part goes here -->
+    <div class="upper-part">
+      <img src="img/user-2.png" style="height: 100px;border-radius: 50%;">
+      <h1>Profile</h1>
+      <h2 id="nameText">Hello, < name > </h2>
+      <span id="user">Email:</span>
+      <div class="success"><span style="text-align: center;">Welcome to auth starter, You are successfully loged in!!!</span></div><br/>
+      <button class="logoutbtn" onclick="Logout()">Logout</button>
+    </div>
+
+    <!-- Middle part goes here -->
+    <div class="middle-part">
+      <h2>Thematic progression</h2>
+      <div class="subjects">
+              <div class="container">
+              <div class="circular-progress"><span class="progress-value">0%</span> </div>
+              <span class="text">Overall Correctness</span>
+              <span>Please reload again to get the correct percentage</span>
+              </div>
+  </div>
+      <!-- <div class="subjects">
+              <div class="container">
+              <div class="circular-progress"><span class="progress-value">0%</span> </div>
+              <span class="text">Digital Logic Design</span>
+              </div>
+      </div>
+      <div class="subjects">
+              <div class="container">
+              <div class="circular-progress"><span class="progress-value">0%</span> </div>
+              <span class="text">Mathemathics</span>
+              </div>
+        </div> -->
+    </div>
+  </div>
+  
+</div>
+  <script src="Navbar.js"></script>
+  <script type="module" src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <style>
+    body{
+  margin: 0;
+  font-family: 'Scheherazade New', serif;
+  background-image: url(/img/leaderboard.png);
+  background-size: cover;
+  max-width: 100%;
+  transition: 0.3s;
+}
+
+.navbar{
+  display: grid;
+  width: 98.6%;
+  grid-template-columns: 200px 1fr 200px;
+  height: auto;
+  align-items: center;
+  background-image: url(img/horizonal-navbar.png);
+  background-size: cover;
+  color: #fff;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+}
+.navbar h2{
+  text-align: center;
+  margin: 0px;
+  padding: 4px;
+}
+.navbar-href{
+  display: grid;
+  justify-content: end;
+}
+#user{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.sidenav{
+  height: 100%;
+  width:0 ;
+  position: fixed;
+  z-index: 1;
+  background-image: url(img/navbar-2.png);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 1;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav a:hover{
+  color: #961e1e;
+  font-size: 28px;
+  transition: 0.3s ease;
+}
+.open{
+  cursor: pointer;
+}
+.nav-img{
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.nav-img2{
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  padding-top:0px ;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.btn,.logoutbtn{
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.logoutbtn{
+  background-color: red;
+}
+.upper-part{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.upper-part img{
+  width: 400px;
+}
+
+@media screen and (max-height:650px){
+  .sidenav{
+    padding-top: 15px;
+  }
+  .sidenav a{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:650px){
+  body{
+  background-image: url(img/exam-2mobile.png);
+  background-size: cover;
+  }
+  .navbar{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    padding: 10px 10px;
+  }
+  .navbar h2{
+    font-size: 20px;
+  }
+  .nav-img{
+    display: none;
+    pointer-events: none;
+  }
+  .nav-img2{
+    display: none;
+    pointer-events: none;
+  }
+  
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="profile.html"><img src="img/user-2.png" class="nav-img"></a>
+      <a href="welcome.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#"class="btn" onclick="logout()">Logout</a>
+    </div>
+    <div class="navbar">
+      <span class="open" style="font-size: 20px;">&#9776; Open</span>
+      <h2 style="cursor: pointer;" onclick='window.location.href="/welcome.html";'>The Ultimate Exam Website</h2>
+      <a class="navbar-href" href="profile.html"><img src="img/user-2.png" title="Profile" class="nav-img2"></a>
+    </div>
+  </nav>
+  <div class="allcode">
+    <div class="upper-part">
+      <h2 style="text-align: center; margin-top: 100px;">The Leaderboard</h2>
+      <img src="img/leaderboard-2.png">
+    </div>
+  </div>
+  <script src="Navbar.js"></script>
+  <script>
+
+  </script>
+</body>
+</html>

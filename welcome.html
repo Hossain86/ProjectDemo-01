@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wecome Page</title>
+    <link rel="stylesheet" href="welcome.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+
+    <div class="allhtmlcode"> 
+        <!-- Navbar Code goes here -->
+        <nav>
+          <div class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="profile.html"><img src="img/user-2.png" class="nav-img"></a>
+            <a href="#" onclick="window.location.reload()">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#" onclick="logout()">Logout</a>
+          </div>
+          <div class="navbar">
+            <span class="open" style="font-size: 20px;">&#9776; Open</span>
+            <h2 style="cursor: pointer;" onclick="window.location.reload()">The Ultimate Exam Website</h2>
+            <a class="navbar-href" href="profile.html"><img src="img/user-2.png" title="Profile" class="nav-img2"></a>
+          </div>
+        </nav>
+      
+        <!-- Subject Buttons goes here -->
+        <div class="main-menu">
+          <div class="header">
+            <!-- <h1 style="text-align: center;">Welcome, Abdur Rahman</h1> -->
+            <h2><span id="user" class="message"> Hello, < email-id > </span></h2>
+            <div class="success"><span style="text-align: center;">Welcome to auth starter, You are successfully loged in!!!</span></div><br/>
+            <button class="btn" onclick="logout()">Logout</button>
+            <p style="opacity: 0.7;">Choose any subject to see the topic list</p>
+          </div>
+          <div class="subject-buttons">
+            <button class="discrete-sub" onclick="showDiscreteTopics()"><img src="img/discrete mathematics.png" class="subbtn-img"> Discrete Mathemathics</button>
+            <button class="dld-sub" onclick="showDldTopics()"><img src="img/dld.png" class="subbtn-img">Digital Logic Design</button>
+            <button class="dsa-sub" onclick="showDsaTopics()"><img src="img/algorithm.png" class="subbtn-img">Data Structure</button>
+            
+            <button class="discrete-sub" onclick="showDiscreteTopics()"><img src="img/discrete mathematics.png" class="subbtn-img"> Discrete Mathemathics</button>
+            <button class="dld-sub" onclick="showDldTopics()"><img src="img/dld.png" class="subbtn-img">Digital Logic Design</button>
+            <button class="dsa-sub" onclick="showDsaTopics()"><img src="img/algorithm.png" class="subbtn-img">Data Structure</button>
+          </div>
+        </div>
+      
+        <!-- discrete topic list goes here -->
+        <div class="topic-main-menu">
+          <div class="topic-header">
+            <h1 style="text-align: center;">Discrete Mathemathics Topic List</h1>
+            <p style="opacity: 0.6;">Choose any topic to start exam</p>
+          </div>
+          <div class="topic-buttons">
+            <a href="Quiz.html"><button class="discrete-topics">Logic and Proof</button></a>
+            <a href="Quiz.html"><button class="discrete-topics">Set</button></a>
+            <a href="Quiz.html"><button class="discrete-topics">Function</button></a>
+            <a href="Quiz.html"><button class="discrete-topics">Number Theory</button></a>
+          </div>
+        </div>
+      
+        <!-- DLD topic list goes here -->
+        <div class="topic-main-menu-dld">
+          <div class="topic-header-dld">
+            <h1 style="text-align: center;">Digital Logic Design Topic List</h1>
+            <p style="opacity: 0.6;">Choose any topic to start exam</p>
+          </div>
+          <div class="topic-buttons-dld">
+            <a href="Quiz.html"><button class="dld-topics">Boolean Algebra</button></a>
+            <a href="Quiz.html"><button class="dld-topics">K map</button></a>
+            <a href="Quiz.html"><button class="dld-topics">Information and Digital Systems</button></a>
+            <a href="Quiz.html"><button class="dld-topics">Flip Flop and Sequential Circuits</button></a>
+          </div>
+        </div>
+      
+        <!-- Maathematics topic list goes here -->
+        <div class="topic-main-menu-dsa">
+          <div class="topic-header-dsa">
+            <h1 style="text-align: center;">Data Structure Topic List</h1>
+            <p style="opacity: 0.6;">Choose any topic to start exam</p>
+          </div>
+          <div class="topic-buttons-dsa">
+            <a href="Quiz.html"><button class="dsa-topics">Algorithm</button></a>
+            <a href="Quiz.html"><button class="dsa-topics">Sorting</button></a>
+            <a href="Quiz.html"><button class="dsa-topics">Searching</button></a>
+            <a href="Quiz.html"><button class="dsa-topics">Linked List</button></a>
+          </div>
+        </div>
+      </div>
+
+    <script src="welcome.js" type="module"></script>
+    <script src="Navbar.js"></script>
+</body>
+</html>

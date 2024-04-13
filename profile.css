@@ -1,0 +1,236 @@
+body{
+  margin: 0;
+  font-family: 'Scheherazade New', serif;
+  /* background-image: url(/img/welcome-02.png);
+  background-size: cover; */
+  background-color: #f1f1f1;
+  max-width: 100%;
+  transition: 0.3s;
+}
+/* progress code goes here */
+.container{
+  display: flex;
+  width: 100%;
+  padding: 40px 0;
+  border-radius: 8px;
+  background: #fff;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.circular-progress{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  background-color: #fff;
+  /* box-shadow: 0 0px 4px 2px rgba(0, 0, 0, 0.2); */
+}
+.progress-value{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #7d2ae8;
+}
+.text{
+  font-size: 30px;
+  font-weight: 600;
+  color: #606060;
+}
+
+
+
+.navbar{
+  display: grid;
+  width: 98.6%;
+  grid-template-columns: 200px 1fr 200px;
+  height: auto;
+  align-items: center;
+  background-image: url(img/horizonal-navbar.png);
+  background-size: cover;
+  color: #fff;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+}
+.navbar h2{
+  text-align: center;
+  margin: 0px;
+  padding: 4px;
+}
+.navbar-href{
+  display: grid;
+  justify-content: end;
+}
+#user{
+  font-size: 20px;
+  font-style: italic;
+}
+.main-menu{
+  width: 60%;
+  height: 160vh;
+  margin-left: 20%;
+  padding: 100px 20px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2fr;
+  justify-items: center;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+}
+.upper-part{
+  display: grid;
+  justify-items: center;
+}
+.upper-part h1{
+  margin: 5px 0px;
+  
+}
+.upper-part p{
+  font-size: 18px;
+}
+.middle-part{
+  height: 100px;
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+}
+.middle-part h2{
+  height: 50px;
+  width: auto;
+  padding: 5px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.4);
+}
+.subjects{
+  display: grid;
+  justify-items: center;
+
+}
+.subjects h3{
+  font-size: 20px;
+}
+
+
+.sidenav{
+  height: 100%;
+  width:0 ;
+  position: fixed;
+  z-index: 1;
+  background-image: url(img/navbar-2.png);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 1;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav a:hover{
+  color: #961e1e;
+  font-size: 28px;
+  transition: 0.3s ease;
+}
+.open{
+  cursor: pointer;
+}
+.nav-img{
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.nav-img2{
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  padding-top:0px ;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.btn,.logoutbtn{
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.logoutbtn{
+  background-color: red;
+}
+
+
+@media screen and (max-height:650px){
+  .sidenav{
+    padding-top: 15px;
+  }
+  .sidenav a{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:650px){
+  body{
+  background-image: url(img/exam-2mobile.png);
+  background-size: cover;
+  }
+  .navbar{
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    padding: 10px 10px;
+  }
+  .navbar h2{
+    font-size: 20px;
+  }
+  .nav-img{
+    display: none;
+    pointer-events: none;
+  }
+  .main-menu{
+    width: 90%;
+    margin-left: 2%;
+    padding: 100px 10px;
+  }
+  .middle-part{
+    gap: 20px;
+  }
+  .middle-part h2{
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.4);
+  }
+  .subjects img{
+    width: 90%;
+  }
+  .nav-img2{
+    display: none;
+    pointer-events: none;
+  }
+  
+}
